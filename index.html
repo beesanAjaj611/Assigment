@@ -8,18 +8,23 @@
     <style>
       body{
         background: rgb(231, 206, 229);
+        background-image: url(W.jpg) ;
+        background-size: 1700px 900px;
+
+      }
+
+     header {
+      background-color:   #bcbcbc;
+      padding: 0px; 
+      text-align: center;
+      margin-top: -5px;
       }
       h1{
         color: black;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
       }
-     header {
-      background-color:  #bcbcbc;
-      padding: 8px;
-      text-align: center;
-
-      }
+     
       nav a{
         background-color: rgb(234, 239, 239);
         margin: 0 15px;
@@ -49,11 +54,10 @@
         color: rgb(13, 138, 138);
       }
       .text p {
-        font-size: 18px;
+        font-size: 25px;
         margin: 0;
         
       }
-    
       .image{
         flex: 1;
         display: flex;
@@ -68,19 +72,26 @@
         border-radius: 20px;
 
       }
+      .image img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
   
       footer {
       background-color:  #bcbcbc;
       padding: 8px;
       text-align: center;
+      margin-top: 40px ;
       }
       footer a{
         background-color: rgb(234, 239, 239);
         margin: 0 15px;
         text-decoration: none;
         color: #000;
-        border-radius: 8px;
-
+        border-radius: 50px;
+        padding: 8px 16px;
+        transition: color 0.3s ease;
         
       }
       footer a:hover{
@@ -91,7 +102,7 @@
   <body>
     <div>
     <header>
-      <h1>Magic of Sweets</h1>
+      <h1 style="color: rgba(0, 0, 0, 0.828);">Magic of Sweets</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -104,7 +115,7 @@
     </header>
     <div class="content">
       <div class="text">
-        <p>
+        <p style="color: azure;">
           In our world, every piece of candy is not just a treat, but a luxurious
           experience that captivates the senses and stirs emotions. At <i><strong>"Sweet
           Magic," we present a carefully curated selection of confections that blend
@@ -130,3 +141,5 @@
   </div>
   </body>
 </html>
+
+
